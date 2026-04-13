@@ -1,0 +1,29 @@
+[user]
+	name = Alexsander Ham
+	email = dev.alexsander.ham@gmail.com
+
+[init]
+	defaultBranch = main
+
+[pull]
+	rebase = false
+
+[push]
+	default = current
+	autoSetupRemote = true
+
+[core]
+	editor = code --wait
+	excludesfile = ~/.gitignore_global
+
+[fetch]
+	prune = true
+
+[commit]
+	verbose = true
+
+[help]
+	autocorrect = prompt
+
+[color]
+	ui = auto

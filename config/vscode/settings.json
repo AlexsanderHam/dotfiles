@@ -1,0 +1,130 @@
+{
+  // ─── Theme & appearance ────────────────────────────────
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.tree.indent": 16,
+
+  // ─── Editor: font ──────────────────────────────────────
+  // Primary: JetBrains Mono Nerd Font (Latin/symbols).
+  // Fallback: Pretendard (Korean/CJK so 한글 renders beautifully).
+  "editor.fontFamily": "JetBrainsMono Nerd Font, Pretendard, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 1.6,
+
+  // ─── Editor: cursor ────────────────────────────────────
+  "editor.cursorStyle": "line",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "smooth",
+
+  // ─── Editor: formatting & indentation ──────────────────
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
+
+  // ─── Editor: UI / behavior ─────────────────────────────
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "selection",
+  "editor.renderLineHighlight": "all",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.stickyScroll.enabled": true,
+  "editor.linkedEditing": true,
+  "editor.suggestSelection": "first",
+  "editor.inlayHints.enabled": "onUnlessPressed",
+
+  // ─── Files ─────────────────────────────────────────────
+  "files.autoSave": "off",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+
+  // ─── Integrated terminal (matches Ghostty look) ───────
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font, Pretendard, monospace",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.smoothScrolling": true,
+
+  // ─── Explorer ──────────────────────────────────────────
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.compactFolders": false,
+
+  // ─── Git ───────────────────────────────────────────────
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+
+  // ─── Search ────────────────────────────────────────────
+  "search.smartCase": true,
+  "search.useGlobalIgnoreFiles": true,
+
+  // ─── Privacy ───────────────────────────────────────────
+  "telemetry.telemetryLevel": "off",
+  "update.showReleaseNotes": false,
+
+  // ─── Code Spell Checker ────────────────────────────────
+  // Keep it quiet — hints only, no loud red squiggles everywhere.
+  "cSpell.diagnosticLevel": "Hint",
+
+  // ─── markdownlint ──────────────────────────────────────
+  // Loosen a few rules that fight Korean writing and
+  // badge-heavy READMEs.
+  "markdownlint.config": {
+    "MD013": false,
+    "MD033": false,
+    "MD041": false,
+    "MD034": false
+  },
+
+  // ─── Language-specific formatters ──────────────────────
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
+  "json.schemaDownload.trustedDomains": {
+    "https://schemastore.azurewebsites.net/": true,
+    "https://raw.githubusercontent.com/microsoft/vscode/": true,
+    "https://raw.githubusercontent.com/devcontainers/spec/": true,
+    "https://www.schemastore.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://json-schema.org/": true,
+    "https://developer.microsoft.com/json-schemas/": true,
+    "https://biomejs.dev": true
+  }
+}

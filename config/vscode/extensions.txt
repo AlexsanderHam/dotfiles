@@ -1,0 +1,45 @@
+# VS Code extensions — installed by `install.sh` via `code --install-extension`.
+# One extension ID per line. Comments with # are ignored.
+
+# ── Theme ──
+catppuccin.catppuccin-vsc
+
+# ── Icons ──
+pkief.material-icon-theme
+
+# ── Code quality / formatting ──
+esbenp.prettier-vscode
+dbaeumer.vscode-eslint
+biomejs.biome
+usernamehw.errorlens
+
+# ── Git ──
+eamodio.gitlens
+mhutchie.git-graph
+
+# ── Project config ──
+editorconfig.editorconfig
+
+# ── Framework support ──
+bradlc.vscode-tailwindcss
+yoavbls.pretty-ts-errors
+
+# ── Writing / code quality (auxiliary) ──
+streetsidesoftware.code-spell-checker
+wix.vscode-import-cost
+naumovs.color-highlight
+
+# ── API / network ──
+humao.rest-client
+
+# ── File format support ──
+mikestead.dotenv
+redhat.vscode-yaml
+ms-azuretools.vscode-containers
+unifiedjs.vscode-mdx
+
+# ── Remote development ──
+ms-vscode-remote.remote-ssh
+
+# ── Markdown ──
+davidanson.vscode-markdownlint

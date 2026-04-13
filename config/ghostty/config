@@ -1,0 +1,47 @@
+# ─────────────────────────────────────────────────────────────
+# Ghostty config — work in progress
+# Docs: https://ghostty.org/docs/config
+# ─────────────────────────────────────────────────────────────
+
+# ── Theme ────────────────────────────────────────────────────
+theme = Catppuccin Mocha
+
+# ── Font ─────────────────────────────────────────────────────
+# Primary: JetBrains Mono Nerd Font for Latin/symbols.
+# Fallback: Pretendard for Korean (CJK) characters.
+# Ghostty uses the first font that contains the requested glyph.
+font-family = JetBrainsMono Nerd Font
+font-family = Pretendard
+font-size = 14
+
+# ── Window ───────────────────────────────────────────────────
+window-padding-x = 12
+window-padding-y = 12
+background-opacity = 0.97
+background-blur = true
+macos-titlebar-style = tabs
+window-save-state = always
+
+# ── Quick Terminal (global hotkey dropdown) ──────────────────
+# Cmd+` (backtick, left of 1 key) toggles a drop-down terminal
+# from anywhere — even when Ghostty is in the background.
+keybind = global:cmd+grave_accent=toggle_quick_terminal
+quick-terminal-position = top
+quick-terminal-size = 35%
+
+# ── Misc ─────────────────────────────────────────────────────
+# Left Option = Alt (word-jump with Opt+←/→), right Option keeps
+# its macOS special-character behavior.
+macos-option-as-alt = left
+
+# Drag-select auto-copies to the system clipboard (iTerm2-style).
+# Note: `true` copies to Ghostty's internal selection buffer only
+# (Linux X11 style); `clipboard` copies to the macOS system
+# clipboard so Cmd+V in other apps works.
+copy-on-select = clipboard
+
+# Scrollback: Ghostty default is 10,000,000 lines — more than enough.
+# No override needed.
+
+# Hide mouse cursor while typing.
+mouse-hide-while-typing = true
