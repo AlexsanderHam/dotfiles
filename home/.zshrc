@@ -12,9 +12,12 @@ eval "$(mise activate zsh)"
 # ── Rust / cargo ────────────────────────────────────────────
 export PATH="$HOME/.cargo/bin:$PATH"
 
-# ── pnpm global bin (for `pnpm add -g` packages like claude-code) ──
+# ── pnpm global bin (for `pnpm add -g` packages) ──
 export PNPM_HOME="$HOME/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
+
+# ── Local bin (Claude Code native installer, etc.) ──
+export PATH="$HOME/.local/bin:$PATH"
 
 # ── Zsh plugins ─────────────────────────────────────────────
 # Autosuggestions: gray history-based suggestions while typing.

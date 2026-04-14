@@ -209,9 +209,13 @@ echo "→ Rust 추가 도구 설치..."
 command -v cargo-watch &>/dev/null || cargo install cargo-watch   # 파일 변경 시 자동 재빌드
 command -v sccache &>/dev/null || cargo install sccache           # 빌드 캐시
 
+# Claude Code는 2025년부터 native installer 방식으로 전환됨 (npm global 지양).
+# ~/.local/bin/claude 에 독립 바이너리 설치 → Node/npm 런타임 불필요.
+export PATH="$HOME/.local/bin:$PATH"
+
 if ! command -v claude &>/dev/null; then
-  echo "→ Claude Code 설치 (npm global)..."
-  npm install -g @anthropic-ai/claude-code
+  echo "→ Claude Code 설치 (native installer)..."
+  curl -fsSL https://claude.ai/install.sh | bash
 fi
 
 # ── 10. bat Catppuccin 테마 설치 ──────────────────────────────
